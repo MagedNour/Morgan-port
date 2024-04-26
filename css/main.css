@@ -1,0 +1,631 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+
+:root{
+    --secondary-color: #4e4e4e;
+    --bg-main: #F5F5F5;
+    --theme-color: #0078ff;
+}
+body{
+    background-color: #F5F5F5;
+}
+
+/* Nav Bar */
+
+.bg-body-tertiary{
+    background-color: rgba(0,0,0,0.9)!important;
+}
+
+.navbar-brand{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.nav-link,.navbar-nav .nav-link.active{
+    color: white;
+    position: relative;
+    margin: 0 15px;
+    padding: 4px 0px !important;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.navbar-nav .nav-link.active::before{
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: width 0.4s;
+    -o-transition: width 0.4s;
+    transition: width 0.4s;
+}
+
+.nav-item .nav-link::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: width 0.4s;
+    -o-transition: width 0.4s;
+    transition: width 0.4s;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+    color: white;
+}
+
+.nav-link:focus, .nav-link:hover{
+    color: white;
+}
+
+.nav-link:hover::before {
+    width: 80%;
+}
+
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.nested-dropdown{
+    position: relative;
+}
+
+.nested-dropdown:hover .nested-dropdown-menu{
+    display: block;
+}
+
+.nested-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 1000;
+    background-color: whitesmoke;
+    list-style: none;
+    padding: 0;
+}
+.nested-dropdown:hover .nested-dropdown-menu {
+    display: block;
+}
+
+.dropdown-item{
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.dropdown-item:hover{
+    color: var(--theme-color);
+}
+
+.navbar-toggler-icon {
+    color: white !important;
+}
+
+
+/* Home Section */
+
+.home{
+    background-image: url(../Assets/images/hero-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+.home .overlay{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.home .container h1{
+    font-size: 4.5rem;
+    line-height: 86px;
+    font-weight: 600;
+}
+.home .container p{
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 600;
+    line-height: 60px;
+}
+.home .container p::before{
+    content: "|";
+    -webkit-animation: typing 10s infinite 2s alternate;
+            animation: typing 10s infinite 2s alternate;
+}
+
+@-webkit-keyframes typing {
+    
+    0% { content: ""; }
+    9% { content: "D"; }
+    10% { content: "De"; }
+    11% { content: "Dev"; }
+    12% { content: "Deve"; }
+    13% { content: "Devel"; }
+    14% { content: "Develo"; }
+    15% { content: "Develop"; }
+    16% { content: "Develope"; }
+    17% { content: "Developer"; }
+    18% { content: "Developer"; }
+
+    
+    19% { content: "Developer"; }
+    20% { content: "Develope"; }
+    21% { content: "Develop"; }
+    22% { content: "Develo"; }
+    23% { content: "Devel"; }
+    24% { content: "Deve"; }
+    25% { content: "Dev"; }
+    26% { content: "De"; }
+    27% { content: "D"; }
+    28% { content: ""; }
+
+
+    28% { content: ""; }
+    37% { content: "D"; }
+    38% { content: "De"; }
+    39% { content: "Des"; }
+    40% { content: "Desi"; }
+    41% { content: "Desig"; }
+    42% { content: "Design"; }
+    43% { content: "Designer"; }
+    44% { content: "Designer"; }
+
+ 
+    45% { content: "Designer"; }
+    46% { content: "Design"; }
+    47% { content: "Desig"; }
+    48% { content: "Desi"; }
+    49% { content: "Des"; }
+    50% { content: "De"; }
+    51% { content: "D"; }
+    52% { content: ""; }
+
+  
+    52% { content: ""; }
+    61% { content: "F"; }
+    62% { content: "Fr"; }
+    63% { content: "Fre"; }
+    64% { content: "Free"; }
+    65% { content: "Freel"; }
+    66% { content: "Freela"; }
+    67% { content: "Freelan"; }
+    68% { content: "Freelanc"; }
+    69% { content: "Freelance"; }
+    70% { content: "Freelancer"; }
+    71% { content: "Freelancer"; }
+
+ 
+    72% { content: "Freelancer"; }
+    73% { content: "Freelance"; }
+    74% { content: "Freelanc"; }
+    75% { content: "Freelan"; }
+    76% { content: "Freela"; }
+    77% { content: "Freel"; }
+    78% { content: "Free"; }
+    79% { content: "Fre"; }
+    80% { content: "Fr"; }
+    81% { content: "F"; }
+    82% { content: ""; }
+
+
+    82% { content: ""; }
+    91% { content: "P"; }
+    92% { content: "Ph"; }
+    93% { content: "Pho"; }
+    94% { content: "Phot"; }
+    95% { content: "Photo"; }
+    96% { content: "Photog"; }
+    97% { content: "Photogr"; }
+    98% { content: "Photogra"; }
+    99% { content: "Photograph"; }
+    100% { content: "Photographer"; }
+}
+
+@keyframes typing {
+    
+    0% { content: ""; }
+    9% { content: "D"; }
+    10% { content: "De"; }
+    11% { content: "Dev"; }
+    12% { content: "Deve"; }
+    13% { content: "Devel"; }
+    14% { content: "Develo"; }
+    15% { content: "Develop"; }
+    16% { content: "Develope"; }
+    17% { content: "Developer"; }
+    18% { content: "Developer"; }
+
+    
+    19% { content: "Developer"; }
+    20% { content: "Develope"; }
+    21% { content: "Develop"; }
+    22% { content: "Develo"; }
+    23% { content: "Devel"; }
+    24% { content: "Deve"; }
+    25% { content: "Dev"; }
+    26% { content: "De"; }
+    27% { content: "D"; }
+    28% { content: ""; }
+
+
+    28% { content: ""; }
+    37% { content: "D"; }
+    38% { content: "De"; }
+    39% { content: "Des"; }
+    40% { content: "Desi"; }
+    41% { content: "Desig"; }
+    42% { content: "Design"; }
+    43% { content: "Designer"; }
+    44% { content: "Designer"; }
+
+ 
+    45% { content: "Designer"; }
+    46% { content: "Design"; }
+    47% { content: "Desig"; }
+    48% { content: "Desi"; }
+    49% { content: "Des"; }
+    50% { content: "De"; }
+    51% { content: "D"; }
+    52% { content: ""; }
+
+  
+    52% { content: ""; }
+    61% { content: "F"; }
+    62% { content: "Fr"; }
+    63% { content: "Fre"; }
+    64% { content: "Free"; }
+    65% { content: "Freel"; }
+    66% { content: "Freela"; }
+    67% { content: "Freelan"; }
+    68% { content: "Freelanc"; }
+    69% { content: "Freelance"; }
+    70% { content: "Freelancer"; }
+    71% { content: "Freelancer"; }
+
+ 
+    72% { content: "Freelancer"; }
+    73% { content: "Freelance"; }
+    74% { content: "Freelanc"; }
+    75% { content: "Freelan"; }
+    76% { content: "Freela"; }
+    77% { content: "Freel"; }
+    78% { content: "Free"; }
+    79% { content: "Fre"; }
+    80% { content: "Fr"; }
+    81% { content: "F"; }
+    82% { content: ""; }
+
+
+    82% { content: ""; }
+    91% { content: "P"; }
+    92% { content: "Ph"; }
+    93% { content: "Pho"; }
+    94% { content: "Phot"; }
+    95% { content: "Photo"; }
+    96% { content: "Photog"; }
+    97% { content: "Photogr"; }
+    98% { content: "Photogra"; }
+    99% { content: "Photograph"; }
+    100% { content: "Photographer"; }
+}
+
+
+/* About Section */
+
+
+.about .progress, .progress-stacked {
+    border-radius: 0px;
+    --bs-progress-height: 0.8rem;
+    background-color: #CDE1F8;
+}
+
+
+.about .title-box h5::after{
+    content: "";
+    width: 80%;
+    height: 3px;
+    background-color: var(--theme-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.about p, .skill-cont span{
+    color: var(--secondary-color);
+}
+
+
+/* section-title */
+
+.section-title h3{
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.section-title p{
+    color: var(--secondary-color);
+}
+
+.section-title p::after{
+    content: "";
+    width: 4%;
+    height: 5px;
+    position: absolute;
+    background-color: var(--theme-color);
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+}
+
+
+/* Services Section */
+
+.services .card i{
+    font-size: 40px;
+}
+.services .icon-circle{
+    width: 100px;
+    height: 100px;
+    border: 10px solid #0078ff;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.services .card:hover .icon-circle{
+    border-color: #CDE1F8;
+    background-color: #0078ff;
+    color: white;
+}
+
+.services .card-body h5{
+    font-size: 1.4rem;
+}
+.services .card-body p{
+    color: var(--secondary-color);
+}
+
+
+/* Counter Section */
+
+.counter{
+    padding: 8rem 0px;
+    background-image: url(../Assets/images/counters-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+ .overlay{
+    background-color: #0078ff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+
+.counter-icon{
+    height: 60px;
+    width: 60px;
+    -webkit-box-shadow: 0 0 0 10px #cde1f8;
+            box-shadow: 0 0 0 10px #cde1f8;
+    font-size: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    line-height: 1.5;
+    color: #fff;
+}
+.counter-num{
+    color: #fff;
+    text-transform: uppercase;
+}
+.counter-num p{
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+/* Portfolio Section */
+
+.portfolio .port-det h5{
+    font-size: 1.2 rem;
+}
+.portfolio .port-det p{
+    color: var(--secondary-color);
+    font-size: 0.8rem;
+}
+.portfolio .port-det p span{
+    color: var(--theme-color);
+}
+.portfolio .card-body a i{
+    font-size: 2.5rem;
+}
+
+.portfolio .card-img img{
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+.portfolio .card{
+    cursor: pointer;
+}
+
+.portfolio .card:hover .card-img img{
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+}
+
+.modal{
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal-dialog{
+    max-width: 800px!important;
+}
+
+
+/* testmonials Section */
+
+.testimonials{
+    padding: 8rem 0;
+    background-image: url(../Assets/images/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.carousel-indicators {
+    bottom: -50px;
+}
+.carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+/* BLOG Section */
+
+.blog .card .badge{
+    bottom: 0;
+    right: 50%;
+    -webkit-transform: translate(50%, 50%);
+        -ms-transform: translate(50%, 50%);
+            transform: translate(50%, 50%);
+    padding: 5px 15px;
+    background-color: var(--theme-color);
+    border-radius: 4px;
+}
+
+.card-body .card-title{
+    font-size: 1.3rem;
+}
+
+.author .avatar{
+    width: 32px;
+    height: 32px;
+}
+.card-footer{
+    color: #1e1e1e;
+}
+
+.card a{
+    color: #1e1e1e;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.card a:hover{
+    color: var(--theme-color);
+}
+
+
+/* Contact Section */
+.contact{
+    background-image: url(../Assets/images/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.contact .title-box{
+    font-size: 2rem;
+}
+.contact .title-box h5::after{
+    content: "";
+    width: 15%;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: var(--theme-color);
+
+}
+
+.contact form input, textarea{
+    padding: 10px 15px;
+    font-size: 14px;
+}
+.contact .list-ico span{
+    color: var(--theme-color);
+    margin-right: 10px;
+}
+
+.contact .social-icons li a{
+    margin: 0 10px;
+    color: #1e1e1e;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #0078ff;
+    padding: 10px;
+    border-radius: 50%;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.contact .social-icons li a:hover{
+    color: white;
+    background-color: #0078ff;
+    border-color: #CDE1F8;
+}
+
+footer{
+    background-color: #0062d3;
+}
+
+
+
+
+
+/* Media Query */
+
+@media (max-width: 992px) {
+    .navbar-collapse {
+        background-color: white;
+    }
+    .navbar-collapse .navbar-nav .nav-link {
+        color: black;
+    }
+    .navbar-collapse .navbar-nav .nav-link:hover {
+        color: #0078ff;
+    }
+    .nested-dropdown-menu {
+        position: static;
+        display: none;
+        background-color: whitesmoke;
+        list-style: none;
+        padding: 0;
+
+        z-index: 2;
+    }
+}
